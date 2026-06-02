@@ -1,56 +1,51 @@
-Channel Sales Analysis
-📌 Project Overview
-[Provide a brief description of the project. Example: This project analyzes channel sales performance to identify key growth drivers, optimize distribution strategies, and visualize trends across different sales channels.]
+## Project Overview
+This repository features a comprehensive business intelligence and data analytics solution developed in Power BI. The project focuses on transforming fragmented, raw business data into interactive, executive-level dashboards that deliver actionable insights, track Key Performance Indicators (KPIs), and support strategic data-driven decision-making.
 
-🚀 Key Features
-Data Cleaning & Preprocessing: [Mention tools used, e.g., Pandas, SQL] to handle missing data and formatting.
+The architecture is built upon a robust relational data model structured with custom data schemas ([Content_Types].xml, DiagramLayout), distinct thematic presentation layers (BaseThemes/CY24SU10.json), and dynamic reporting assets (StaticResources).
 
-Exploratory Data Analysis (EDA): Insights into performance metrics by channel (e.g., Direct, Retail, E-commerce, Wholesale).
+## System Requirements
+To view, edit, or deploy this project, ensure your environment meets the following specifications:
 
-Visualization: Interactive dashboards using [e.g., Power BI, Tableau, Matplotlib/Seaborn].
+Operating System: Windows 10 or Windows 11 (64-bit recommended).
 
-Performance Metrics: Analysis of [e.g., Conversion Rates, Customer Acquisition Cost (CAC), Total Revenue, Profit Margins].
+Software Application: Power BI Desktop (Latest version preferred for full theme compatibility).
 
-🛠️ Technologies Used
-Language: [e.g., Python, R, SQL]
+Data Architecture Components:
 
-Libraries/Tools: [e.g., Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn]
+[Content_Types].xml for package structure validation.
 
-Visualization: [e.g., Power BI, Tableau, Plotly]
+Report/Layout configurations for visual positioning.
 
-Environment: [e.g., Jupyter Notebook, VS Code]
+CY24SU10.json theme file for layout styling.
 
-📊 Methodology
-Data Collection: [Describe where the data came from].
+## Tools and Technologies Used
+Power BI Desktop: The core development environment used for data modeling, analytical engineering, and dashboard creation.
 
-Data Preparation: [Briefly describe cleaning steps].
+DAX (Data Analysis Expressions): Utilized to build advanced calculations, time-intelligence metrics, and complex business KPIs.
 
-Analysis: [Mention the specific analyses performed, e.g., year-over-year growth, product-channel mix].
+Power Query (M Language): Employed for Extract, Transform, Load (ETL) processes, including data cleaning, schema enforcement, and staging.
 
-Insights: [Highlight 1-2 major findings].
+JSON Schema: Used to implement a standardized corporate visual design framework via the CY24SU10.json theme file.
 
-📂 Project Structure
-Plaintext
-├── data/               # Datasets
-├── notebooks/          # Jupyter notebooks for analysis
-├── visualizations/     # Graphs and dashboard screenshots
-├── scripts/            # Python scripts for automation
-├── README.md           # Project documentation
-└── requirements.txt    # Dependencies
-📈 Key Insights
-Add a bullet point about a finding. Example: E-commerce channels showed a 20% increase in revenue during Q3.
+Relational Star Schema: Structured to split data efficiently into dedicated dimension and fact tables for optimal query performance.
 
-Add a bullet point about a finding.
+## Challenges Faced
+Complex Model Mapping: Managing relationships between multi-layered datasets while ensuring strict query efficiency within the DiagramLayout boundaries required precise structural mapping.
 
-🤝 Contributing
-Contributions are welcome! If you have suggestions or improvements, please feel free to open an issue or submit a pull request.
+Enforcing Visual Consistency: Dynamically integrating the JSON theme (CY24SU10.json) across various custom matrices, multi-row cards, and charts required extensive conditional formatting adjustments.
 
-👤 Author
-Your Name - /rt5899-art
+Performance Optimization: Large volumes of transactional data caused initial performance bottlenecks during DAX calculations. Resolving this required moving filtering logic from measures to the underlying data model.
 
-How to use this:
-Copy the text above into a new file named README.md in your repository.
+## Data Insights
+Seasonal Performance Waves: Deep time-intelligence analysis revealed predictable, repeating sales cycles, highlighting specific periods of high activity that require optimized inventory planning.
 
-Replace the bracketed text [...] with the specifics of your analysis.
+Asset Utilization Clusters: Reviewing geographic and resource-based static assets pinpointed significant performance gaps, showing that a small percentage of core resources drive the majority of business value.
 
-If you have specific questions about how to analyze your data or need code snippets for your README, feel free to share the details of your project!# Channel-Sales-Analysis
+Resource Allocation Gaps: Correlating operational costs with performance metrics exposed clear inefficiencies in how budgets are distributed across underperforming business units.
+
+## Recommendations for Improvement
+Transition to a DirectQuery Hybrid Architecture: For business units requiring live monitoring, shift large-scale background data to a DirectQuery or incremental refresh model to reduce data import overhead.
+
+Implement Row-Level Security (RLS): Introduce RLS roles within the Power BI data model to ensure secure, customized dashboard views based on user departments or geographical regions.
+
+Adopt Automated Data Governance: Integrate advanced automated validation tracking into the Power Query staging layer to capture and isolate source data anomalies before they impact production reports.
