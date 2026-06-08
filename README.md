@@ -1,4 +1,4 @@
-# Channel Sales and Supply Chain Analysis Dashboard
+# Channel Sales Analysis 
 
 
 ## Project Overview
