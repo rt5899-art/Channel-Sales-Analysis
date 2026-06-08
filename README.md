@@ -35,11 +35,11 @@ Syncing Dual-Axis Discrepancies: Overlaying continuous trend charts with dynamic
 
 ### Key Insights
 
-Dashboard
+Based on the aggregated data compiled in the data model interface
 
 ![image alt](https://github.com/rt5899-art/Channel-Sales-Analysis/blob/main/ss-%20Channelsales%20dash_bi.png?raw=true)
 
-Based on the aggregated data compiled in the data model interface, the following insights regarding distribution networks and revenue performance were identified:
+The following insights regarding distribution networks and revenue performance were identified:
 
 High-Level Distribution Key Performance Indicators: The platform monitors an overall Total Sales volume of 82.69M, generating a Total Profit of 30.87M. This output is generated across a Total Unit Sold volume of 36K, bringing in an Average Profit of 3.86K per transaction with an Avg Delivery Days rate of 15.17 days.
 
