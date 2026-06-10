@@ -1,70 +1,58 @@
-# Channel Sales Analysis 
+# Channel Revenue Analysis
 
+### Project Overview
+This project delivers an interactive Supply Chain Management and Channel Sales Analysis dashboard built to monitor wholesale, online, in-store, and distributor networks. By unifying revenue generation metrics, warehousing outputs, and fulfillment lifecycle data, this analytics solution uncovers logistics bottlenecks, evaluates distribution channel profitability, and highlights strategic cost-saving opportunities.
 
-## Project Overview
-
-This repository hosts a multi-channel supply chain and sales performance analysis project built in Microsoft Power BI. The main purpose of this project is to aggregate complex distribution logistics, operational margins, and warehouse transaction metrics into a unified business intelligence interface. By evaluating performance indicators across fulfillment hubs and diverse transaction routes, this project addresses the problem of fragmented B2B and B2C operational data, enabling supply chain managers to optimize discount applications, track seasonal ordering patterns, and eliminate warehouse distribution imbalances.
-
-### Requirements
-
-Microsoft Power BI Desktop (Version 2.126 or higher recommended)
-
-System memory: Minimum 8 GB RAM (16 GB recommended for seamless tabular data calculations)
-
-Operating System: Microsoft Windows 10 or Windows 11
-
-Data Source File: Cleaned supply chain ledger records and distribution matrix files (CSV or Excel format)
-
-### Tools and Technologies
-
-Business Intelligence Platform: Microsoft Power BI
-
-ETL Transformation Engine: Power Query
-
-Analytical Expression Language: DAX (Data Analysis Expressions)
-
-Data Architecture: Local Star Schema Relational Model
-
-### Challenges Faced
-
-Overlapping Text in Saturated Matrices: Displaying multi-digit alphanumeric warehouse tracking numbers (e.g., WARE-NMK1003, WARE-PUJ1005) next to massive raw revenue fields led to matrix truncation. This was fixed by setting auto-fit column constraints, adjusting header alignment padding, and reducing text formatting to appropriate decimal limits.
-
-Complex Multi-Channel Donut Mapping: Segmenting independent order volumes simultaneously by physical warehouse locations and variable sales channels caused rendering lag during cross-filtering. This was resolved by optimizing relationships between fact and dimension tables and disabling bi-directional cross-filtering where unnecessary.
-
-Syncing Dual-Axis Discrepancies: Overlaying continuous trend charts with dynamic numeric callouts across a 12-month calendar created formatting conflicts. This was solved by designing custom tooltips to isolate granular value changes smoothly across months.
-
-### Key Insights
-
-Based on the aggregated data compiled in the data model interface
+#### Dashboard Preview
 
 ![image alt](https://github.com/rt5899-art/Channel-Sales-Analysis/blob/main/ss-%20Channelsales%20dash_bi.png?raw=true)
 
-The following insights regarding distribution networks and revenue performance were identified:
+### Tools & Technologies
 
-High-Level Distribution Key Performance Indicators: The platform monitors an overall Total Sales volume of 82.69M, generating a Total Profit of 30.87M. This output is generated across a Total Unit Sold volume of 36K, bringing in an Average Profit of 3.86K per transaction with an Avg Delivery Days rate of 15.17 days.
+Data Visualization: Microsoft Power BI
 
-Temporal Revenue Velocity: Continuous revenue flow analysis shows clear seasonal variations. The fiscal calendar opens with a multi-month decline, falling from 6.2M in February down to a cycle low of 4.5M in April. Immediately following this valley, revenue experiences continuous upward growth, peaking at 8.1M in July and maintaining an elevated baseline through the remainder of the year before closing at 8.4M in December.
+Data Engineering: Power Query for multi-channel data ingestion, schema validation, and null-value cleaning
 
-Order Footprint by Warehouse Hub: Orders are distributed across six main warehouse hubs. WARE-NMK1003 captures the largest individual share of fulfillment tracking, logging 2,505 Total Orders, 11,351 in Total Quantity, 2,61,07,132.90 in Revenue, and 97,52,837.39 in Total Profit. WARE-PUJ1005 follows with 1,451 Total Orders and 56,06,478.12 in Total Profit. The remaining facilities scale down gradually, with WARE-NBV1002 representing the smallest distribution footprint at 691 Total Orders and 26,03,580.10 in Total Profit.
+Analysis: DAX (Data Analysis Expressions) for cumulative revenue metrics, tiered profit-margin tracking, and delivery timelines
 
-Sales Channel Volume and Profit Performance: Market distribution paths display distinct volume dynamics:
+Core Visuals: Time-series trend lines, distribution donut charts, monthly order histograms, and structured data matrices
 
-Distributor channels command the largest operational volume share, capturing 41.14% of orders (reflecting 6,287 Total Orders, a 55,28,657.54 Total Profit, and an Average of Discount Applied of 0.11).
+### Key Business Insights
 
-Online channels capture a 30.13% order share (reflecting 2,425 Total Orders, 90,98,012.94 in Total Profit, and a 0.12 discount profile).
+Financial Performance: Achieved 82.69M in Total Sales with a robust Total Profit of 30.87M and an Average Profit of 3.86K per transaction batch.
 
-In-Store physical retail channels capture a 17.39% order share but generate the highest overall financial yield, securing 1,27,35,062.34 in Total Profit from 3,298 orders.
+Volume Metrics: Successfully fulfilled 36K in Total Units Sold across a total network volume of 7,991 orders.
 
-Wholesale operations represent the smallest share at 11.34% of orders, bringing in 35,12,924.90 in Total Profit.
+Logistics Performance: Maintained an Avg Delivery Days metric of 15.17 days across the global supply chain network.
 
-Monthly Order Pacing: Order quantity counts track distinct cyclical movements throughout the year. Volume hits its lowest point in March at 449 orders before staging a continuous monthly expansion through summer, peaking at 795 orders in July, and stabilizing at 791 orders in December.
+Channel Mix: The In-Store sales channel generated the largest transaction volume at 41.14% (15K units), followed by Distributor networks at 30.13% (11K units), and Online channels at 17.39% (6K units).
 
-### Recommendations for Improvements
+Warehouse Throughput: Facility WARE-NMK1003 emerged as the primary logistical anchor, single-handedly processing 31.39% of total orders (2,505 orders) and driving over 26.1M in revenue.
 
-Replicate In-Store Margin Efficiencies Across Digital Channels: In-Store retail channels represent an incredibly profitable sector, securing a peak Total Profit of 1,27,35,062.34 from 3,298 orders. Management should conduct a complete pricing structure audit to see if this margin efficiency can be applied to Distributor channels (which handle 6,287 orders but bring in less than half the profit at 55,28,657.54).
+Seasonality Trends: Monthly order volumes show clear cyclical behavior, spiking significantly in Q3 (peaking in July at 795 orders) compared to a Q1 low (dipping in March to 449 orders).
 
-Audit Warehouse Logistics at WARE-NMK1003: Since WARE-NMK1003 is the primary logistics hub for the network—handling 2,505 orders and generating a dominant 97,52,837.39 in profit—operations should review this facility's storage and distribution processes. Creating a playbook based on these findings will help optimize lower-performing sites like WARE-NBV1002 (26,03,580.10 profit).
+### Strategic Recommendations
 
-Optimize Discount Allocations to Capitalize on Peak Ordering Windows: The system records a long, steady increase in order volume starting from the March valley (449 orders) through the July peak (795 orders). Tightening the Average of Discount Applied from the current 0.12 baseline down to 0.09 during high-demand months would directly increase net margins when demand is already high.
+Insight: In-Store sales drive the largest volume share (41.14%) and highest revenue generation (34.04M), but carry a 12% baseline discount rate.
 
-Address the Q1 Revenue Valley: The dashboard highlights a sharp revenue drop between February (6.2M) and April (4.5M). Cross-referencing this drop with seasonal marketing data and inventory logs will help identify if the decline is a standard seasonal trend or if it points to inventory stockouts that need to be resolved.
+➔ Action: Implement dynamic pricing models for physical storefronts during peak weekend cycles to optimize gross margins and reduce reliance on heavy flat-rate discounting.
+
+Insight: Warehouse WARE-NMK1003 handles nearly one-third of all global supply chain operations, creating a high-risk structural dependency.
+
+➔ Action: Distribute high-velocity inventory categories to secondary facilities like WARE-PUJ1005 or WARE-UHY1004 to alleviate regional bottlenecks and prevent single-point-of-failure delays.
+
+Insight: The global Average Delivery Days metric stands at a relatively high 15.17 days.
+
+➔ Action: Audit the internal courier assignment rules and transit workflows for the bottom-performing 30% of shipments to compress turnaround cycles down to a target baseline of 10-12 days.
+
+Insight: Fulfillment demand climbs steadily through Q2 and peaks aggressively in July before leveling off into Q4.
+
+➔ Action: Structure temporary labor contracts and adjust warehouse storage capacities in advance of May to seamlessly manage the seasonal mid-year shipment surge.
+
+#### How to Explore
+
+Clone the project repository using git clone https://github.com/rt5899-art/Channel-Sales-Analysis.git.
+
+Open the primary dashboard file using Power BI Desktop.
+
+Interact with the cross-filtering visuals to slice profitability and order volumes by specific Warehouse Codes or Sales Channels.
