@@ -1,4 +1,4 @@
-# Channel Revenue Analysis
+# Supply Chain Management And Channel Sales Analysis
 
 ### Project Overview
 This project delivers an interactive Supply Chain Management and Channel Sales Analysis dashboard built to monitor wholesale, online, in-store, and distributor networks. By unifying revenue generation metrics, warehousing outputs, and fulfillment lifecycle data, this analytics solution uncovers logistics bottlenecks, evaluates distribution channel profitability, and highlights strategic cost-saving opportunities.
