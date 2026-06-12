@@ -11,7 +11,7 @@ This project delivers an interactive Supply Chain Management and Channel Sales A
 
 Data Visualization: Microsoft Power BI
 
-Data Engineering: Power Query for multi-channel data ingestion, schema validation, and null-value cleaning
+Platform : Microsoft Excel
 
 Analysis: DAX (Data Analysis Expressions) for cumulative revenue metrics, tiered profit-margin tracking, and delivery timelines
 
