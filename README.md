@@ -9,13 +9,13 @@ This project delivers an interactive Supply Chain Management and Channel Sales A
 
 ### Tools & Technologies
 
-Data Visualization: Microsoft Power BI
+**Data Visualization:** Microsoft Power BI
 
-Platform : Microsoft Excel
+**Platform :** Microsoft Excel
 
-Analysis: DAX (Data Analysis Expressions) for cumulative revenue metrics, tiered profit-margin tracking, and delivery timelines
+**Analysis:** DAX (Data Analysis Expressions) for cumulative revenue metrics, tiered profit-margin tracking, and delivery timelines
 
-Core Visuals: Time-series trend lines, distribution donut charts, monthly order histograms, and structured data matrices
+**Core Visuals:** Time-series trend lines, distribution donut charts, monthly order histograms, and structured data matrices
 
 ### Key Business Insights
 
@@ -33,18 +33,18 @@ Core Visuals: Time-series trend lines, distribution donut charts, monthly order 
 
 ### Strategic Recommendations
 
-Insight: In-Store sales drive the largest volume share (41.14%) and highest revenue generation (34.04M), but carry a 12% baseline discount rate.
+*Insight:* In-Store sales drive the largest volume share (41.14%) and highest revenue generation (34.04M), but carry a 12% baseline discount rate.
 
-➔ Action: Implement dynamic pricing models for physical storefronts during peak weekend cycles to optimize gross margins and reduce reliance on heavy flat-rate discounting.
+➔ *Action:* Implement dynamic pricing models for physical storefronts during peak weekend cycles to optimize gross margins and reduce reliance on heavy flat-rate discounting.
 
-Insight: Warehouse WARE-NMK1003 handles nearly one-third of all global supply chain operations, creating a high-risk structural dependency.
+*Insight:* Warehouse WARE-NMK1003 handles nearly one-third of all global supply chain operations, creating a high-risk structural dependency.
 
-➔ Action: Distribute high-velocity inventory categories to secondary facilities like WARE-PUJ1005 or WARE-UHY1004 to alleviate regional bottlenecks and prevent single-point-of-failure delays.
+➔ *Action:* Distribute high-velocity inventory categories to secondary facilities like WARE-PUJ1005 or WARE-UHY1004 to alleviate regional bottlenecks and prevent single-point-of-failure delays.
 
-Insight: The global Average Delivery Days metric stands at a relatively high 15.17 days.
+*Insight:* The global Average Delivery Days metric stands at a relatively high 15.17 days.
 
-➔ Action: Audit the internal courier assignment rules and transit workflows for the bottom-performing 30% of shipments to compress turnaround cycles down to a target baseline of 10-12 days.
+➔ *Action:* Audit the internal courier assignment rules and transit workflows for the bottom-performing 30% of shipments to compress turnaround cycles down to a target baseline of 10-12 days.
 
-Insight: Fulfillment demand climbs steadily through Q2 and peaks aggressively in July before leveling off into Q4.
+*Insight:* Fulfillment demand climbs steadily through Q2 and peaks aggressively in July before leveling off into Q4.
 
-➔ Action: Structure temporary labor contracts and adjust warehouse storage capacities in advance of May to seamlessly manage the seasonal mid-year shipment surge.
+➔ *Action:* Structure temporary labor contracts and adjust warehouse storage capacities in advance of May to seamlessly manage the seasonal mid-year shipment surge.
