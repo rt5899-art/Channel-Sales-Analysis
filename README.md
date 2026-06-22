@@ -5,7 +5,7 @@ This project delivers an interactive Supply Chain Management and Channel Sales A
 
 #### Dashboard Preview
 
-![image alt](https://github.com/rt5899-art/Channel-Sales-Analysis/blob/main/channel%20sales%20final.png?raw=true)
+![image alt](https://github.com/rt5899-art/Channel-Sales-Analysis/blob/main/channel%20sales.png?raw=true)
 
 ### Tools & Technologies
 
